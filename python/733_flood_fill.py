@@ -20,7 +20,7 @@ class Solution:
         while queue:
             r, c = queue.popleft()
 
-            if not self.should_amend(r, c):
+            if not self.__should_amend(r, c):
                 continue
 
             image[r][c] = color
@@ -39,21 +39,21 @@ class Solution:
         self.original_colour = image[sr][sc]
         self.color = color
 
-        self.dfs(sr, sc)
+        self.__dfs(sr, sc)
         return image
     
 
-    def dfs(self, r: int, c: int) -> None:
-        if not self.should_amend(r, c):
+    def __dfs(self, r: int, c: int) -> None:
+        if not self.__should_amend(r, c):
             return
         
-        self.dfs(r+1, c)
-        self.dfs(r-1, c)
-        self.dfs(r, c+1)
-        self.dfs(r, c-1)
+        self.__dfs(r+1, c)
+        self.__dfs(r-1, c)
+        self.__dfs(r, c+1)
+        self.__dfs(r, c-1)
 
 
-    def should_amend(self, r: int, c: int) -> bool:
+    def __should_amend(self, r: int, c: int) -> bool:
         if r < 0 or r >= self.m or c < 0 or c >= self.n:
             return False
         

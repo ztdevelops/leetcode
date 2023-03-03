@@ -48,11 +48,11 @@ class Solution:
         root1_pointer = root1
         root2_pointer = root2
 
-        self.dfs(root1_pointer, root2_pointer)
+        self.__dfs(root1_pointer, root2_pointer)
         return root1
 
 
-    def dfs(self, root1: TreeNode, root2: TreeNode) -> None:  # use root1 as the tree to return
+    def __dfs(self, root1: TreeNode, root2: TreeNode) -> None:  # use root1 as the tree to return
         if not (root1 or root2):
             return
 
@@ -61,10 +61,10 @@ class Solution:
             if not root1.left and root2.left:
                 root1.left = root2.left
             else:
-                self.dfs(root1.left, root2.left)
+                self.__dfs(root1.left, root2.left)
 
             if not root1.right and root2.right:
                 root1.right = root2.right
             else:
-                self.dfs(root1.right, root2.right)
+                self.__dfs(root1.right, root2.right)
         
