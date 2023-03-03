@@ -7,6 +7,7 @@ class TreeNode:
         self.left = left
         self.right = right
 
+
 class Solution:
     def mergeTrees_BFS(self, root1: TreeNode, root2: TreeNode) -> TreeNode:
         if not (root1 and root2):
