@@ -57,3 +57,4 @@ class Solution:
             return False
         
         return self.grid[r][c] == 1
+
