@@ -18,7 +18,7 @@ class Solution:
         return result
 
 
-    def bfs(self, r, c):
+    def bfs(self, r: int, c: int) -> int:
         queue = deque()
         queue.append((r, c))
         area = 0
@@ -48,7 +48,7 @@ class Solution:
         return result
 
 
-    def dfs(self, r, c):
+    def dfs(self, r: int, c: int) -> int:
         if not self.should_amend(r, c):
             return 0
         
@@ -60,7 +60,7 @@ class Solution:
         return count
 
 
-    def should_amend(self, r, c):
+    def should_amend(self, r: int, c: int) -> bool:
         if r < 0 or r >= self.m or c < 0 or c >= self.n:
             return False
         

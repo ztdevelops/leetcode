@@ -43,7 +43,7 @@ class Solution:
         return image
     
 
-    def dfs(self, r, c):
+    def dfs(self, r: int, c: int) -> None:
         if not self.should_amend(r, c):
             return
         
@@ -53,7 +53,7 @@ class Solution:
         self.dfs(r, c-1)
 
 
-    def should_amend(self, r, c):
+    def should_amend(self, r: int, c: int) -> bool:
         if r < 0 or r >= self.m or c < 0 or c >= self.n:
             return False
         
