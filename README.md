@@ -7,6 +7,7 @@
 |695|[Max Area of Island](https://leetcode.com/problems/max-area-of-island/)|[Python](./python/695_max_area_of_island.py)|Medium|
 |733|[Flood Fill](https://leetcode.com/problems/flood-fill/)|[Python](./python/733_flood_fill.py)|Easy|
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)|[Python](./python/994_rotten_oranges.py)|Medium|
+|1345|[Jump Game IV](https://leetcode.com/problems/jump-game-iv/)|[Python](./python/1345_jump_game_iv.py)|Hard|
 
 ## Database
 | # | Title | Solution | Difficulty |
