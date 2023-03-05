@@ -15,3 +15,4 @@
 |176|[Second Highest Salary](https://leetcode.com/problems/second-highest-salary/)|[MySQL](./sql/176_second_highest_salary.sql)|Medium|
 |177|[Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/)|[MySQL](./sql/177_nth_highest_salary.sql)|Medium|
 |178|[Rank Scores](https://leetcode.com/problems/rank-scores/)|[MySQL](./sql/178_rank_scores.sql)|Medium|
+|181|[Employees Earning More Than Their Managers](https://leetcode.com/problems/employees-earning-more-than-their-managers/)|[MySQL](./sql/181_employees_earning_more_than_their_managers.sql)|Easy|
