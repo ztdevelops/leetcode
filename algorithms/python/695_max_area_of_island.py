@@ -5,7 +5,6 @@ class Solution:
     m = None
     n = None
 
-
     def maxAreaOfIsland_BFS(self, grid: list[list[int]]) -> int:
         self.grid = grid
         self.m = len(grid)
@@ -16,7 +15,6 @@ class Solution:
                 if self.grid[i][j] == 1:
                     result = max(result, self.__bfs(i, j))
         return result
-
 
     def __bfs(self, r: int, c: int) -> int:
         queue = deque()
@@ -34,7 +32,6 @@ class Solution:
                 queue.append((r, c+offset))
         return area
 
-
     def maxAreaOfIsland_DFS(self, grid: list[list[int]]) -> int:
         self.grid = grid
         self.m = len(grid)
@@ -47,7 +44,6 @@ class Solution:
                     result = max(result, self.__dfs(i, j))
         return result
 
-
     def __dfs(self, r: int, c: int) -> int:
         if not self.__should_amend(r, c):
             return 0
@@ -59,10 +55,8 @@ class Solution:
             count += self.__dfs(r, c+offset)
         return count
 
-
     def __should_amend(self, r: int, c: int) -> bool:
         if r < 0 or r >= self.m or c < 0 or c >= self.n:
             return False
         
         return self.grid[r][c] == 1
-

@@ -7,7 +7,6 @@ class Solution:
     fresh = None
     queue = None
 
-
     def orangesRotting(self, grid: list[list[int]]) -> int:
         self.grid = grid
         self.m = len(grid)
@@ -23,7 +22,6 @@ class Solution:
 
         return self.__bfs()
     
-
     def __update_fresh_count_and_queue(self) -> None:
         for i in range(self.m):
             for j in range(self.n):
@@ -32,8 +30,7 @@ class Solution:
                 elif self.grid[i][j] == 2:
                     self.queue.append((i, j, 0))
 
-
-    def __bfs(self) -> None:
+    def __bfs(self) -> int:
         time_taken = 0
         num_affected = 0
         
@@ -50,7 +47,6 @@ class Solution:
                 self.queue.append((r, c+offset, time_so_far + 1))
         
         return time_taken if num_affected == self.fresh else -1
-
 
     def __should_amend(self, r: int, c: int) -> bool:
         if r < 0 or r >= self.m or c < 0 or c >= self.n:

@@ -9,7 +9,7 @@ class Solution:
         self.__generate_adjacency_list()
         return self.__bfs()
     
-    def __bfs(self):
+    def __bfs(self) -> int:
         steps = 0
         n = len(self.arr)
 
@@ -42,7 +42,7 @@ class Solution:
                 self.adj_list[self.arr[idx]] = set() # empty it, as we will not need to visit these values again.
             steps += 1
 
-    def __generate_adjacency_list(self):
+    def __generate_adjacency_list(self) -> None:
         self.adj_list = {}
         for i in range(len(self.arr)):
             val = self.arr[i]
