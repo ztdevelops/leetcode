@@ -1,17 +1,14 @@
 class Solution:
     time = None
 
-
     def minimumTime(self, time: list[int], totalTrips: int) -> int:
         self.time = time
         return self.__bsearch(totalTrips)
 
+    def __calculate_trips(self, mid: int) -> int:
+        return sum(mid // i for i in self.time)    
 
-    def __calculate_trips(self, mid: int):
-        return sum(mid // i for i in self.time)
-    
-
-    def __bsearch(self, totalTrips: int):
+    def __bsearch(self, totalTrips: int) -> int:
         left = min(self.time)
         right = left * totalTrips
 

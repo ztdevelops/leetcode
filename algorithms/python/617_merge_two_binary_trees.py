@@ -40,7 +40,6 @@ class Solution:
 
         return root1
 
-    
     def mergeTrees_DFS(self, root1: TreeNode, root2: TreeNode) -> TreeNode:
         if not (root1 and root2):
             return root1 if not root2 else root2
@@ -50,7 +49,6 @@ class Solution:
 
         self.__dfs(root1_pointer, root2_pointer)
         return root1
-
 
     def __dfs(self, root1: TreeNode, root2: TreeNode) -> None:  # use root1 as the tree to return
         if not (root1 or root2):
@@ -67,4 +65,3 @@ class Solution:
                 root1.right = root2.right
             else:
                 self.__dfs(root1.right, root2.right)
-        

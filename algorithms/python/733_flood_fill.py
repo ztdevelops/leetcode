@@ -7,7 +7,6 @@ class Solution:
     original_colour = None
     color = None
 
-
     def floodFill_BFS(self, image: list[list[int]], sr: int, sc: int, color: int) -> list[list[int]]:
         self.image = image
         self.m = len(image)
@@ -31,7 +30,6 @@ class Solution:
 
         return image
 
-
     def floodFill_DFS(self, image: list[list[int]], sr: int, sc: int, color: int) -> list[list[int]]:
         self.image = image
         self.m = len(image)
@@ -42,7 +40,6 @@ class Solution:
         self.__dfs(sr, sc)
         return image
     
-
     def __dfs(self, r: int, c: int) -> None:
         if not self.__should_amend(r, c):
             return
@@ -52,7 +49,6 @@ class Solution:
         self.__dfs(r, c+1)
         self.__dfs(r, c-1)
 
-
     def __should_amend(self, r: int, c: int) -> bool:
         if r < 0 or r >= self.m or c < 0 or c >= self.n:
             return False
@@ -61,4 +57,3 @@ class Solution:
             return False
         
         return True
-
