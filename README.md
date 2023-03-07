@@ -8,6 +8,7 @@
 |733|[Flood Fill](https://leetcode.com/problems/flood-fill/)|[Python](./algorithms/python/733_flood_fill.py)|Easy|
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)|[Python](./algorithms/python/994_rotten_oranges.py)|Medium|
 |1345|[Jump Game IV](https://leetcode.com/problems/jump-game-iv/)|[Python](./algorithms/python/1345_jump_game_iv.py)|Hard|
+|2187|[Minimum Time to Complete Trips](https://leetcode.com/problems/minimum-time-to-complete-trips/)|[Python](./algorithms/python/2187_minimum_time_to_complete_trips.py)|Medium|
 
 ## Database
 | # | Title | Solution | Difficulty |
