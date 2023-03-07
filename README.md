@@ -6,6 +6,7 @@
 |617|[Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/)|[Python](./algorithms/python/617_merge_two_binary_trees.py)|Easy|
 |695|[Max Area of Island](https://leetcode.com/problems/max-area-of-island/)|[Python](./algorithms/python/695_max_area_of_island.py)|Medium|
 |733|[Flood Fill](https://leetcode.com/problems/flood-fill/)|[Python](./algorithms/python/733_flood_fill.py)|Easy|
+|743|[Network Delay Time](https://leetcode.com/problems/network-delay-time/)|[Python](./algorithms/python/743_network_delay_time.py)|Medium|
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)|[Python](./algorithms/python/994_rotten_oranges.py)|Medium|
 |1345|[Jump Game IV](https://leetcode.com/problems/jump-game-iv/)|[Python](./algorithms/python/1345_jump_game_iv.py)|Hard|
 |2187|[Minimum Time to Complete Trips](https://leetcode.com/problems/minimum-time-to-complete-trips/)|[Python](./algorithms/python/2187_minimum_time_to_complete_trips.py)|Medium|
