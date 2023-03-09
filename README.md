@@ -2,6 +2,7 @@
 ## Algorithms
 | # | Title | Solution | Difficulty |
 |---|-------|----------|------------|
+|1|[Two Sum](https://leetcode.com/problems/two-sum/)|[Python](./algorithms/python/1_two_sum.py)|Easy|
 |116|[Populating Next Right Pointer in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)|[Python](./algorithms/python/116_populating_next_right_pointer_in_each_node.py)|Medium|
 |509|[Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)|[Python](./algorithms/python/509_fibonacci_number.py)|Easy|
 |617|[Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/)|[Python](./algorithms/python/617_merge_two_binary_trees.py)|Easy|
