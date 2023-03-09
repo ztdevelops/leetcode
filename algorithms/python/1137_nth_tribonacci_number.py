@@ -1,5 +1,6 @@
 class Solution:
     cache = {}
+
     def tribonacci(self, n: int) -> int:
         if n <= 1:
             return n
